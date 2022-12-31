@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="library_app_interview_task">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Library App</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = null;
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+
+<div class="dashboard">
+  <svg>
+    <circle class="meter" cx="20" cy="20" r="17" />
+  </svg>
+</div>
+
+<!--  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>-->
+<!--  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>-->
+<!--  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>-->
+<!--  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>-->
+
+<!--  <script type="module">-->
+<!--  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";-->
+<!--  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";-->
+<!--    var firebaseConfig = {-->
+<!--      apiKey: "AIzaSyA8HrW8DKD2d27hTrQyrZCvoRbLqwuiRkA",-->
+<!--      authDomain: "library-app-sabis.firebaseapp.com",-->
+<!--      projectId: "library-app-sabis",-->
+<!--      storageBucket: "library-app-sabis.appspot.com",-->
+<!--      messagingSenderId: "179003758886",-->
+<!--      appId: "1:179003758886:web:f00f1718db7d104a7f49e7",-->
+<!--      measurementId: "G-H6S3LMHY97"-->
+<!--    };-->
+<!--    firebase.initializeApp(firebaseConfig);-->
+<!--  </script>-->
+
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        }
+      }).then(function(engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        return appRunner.runApp();
+      });
+    });
+  </script>
+</body>
+</html>
